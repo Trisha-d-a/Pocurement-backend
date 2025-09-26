@@ -1,0 +1,16 @@
+/* 🔹 Hide the CURL and request URL */
+.swagger-ui .curl,
+.swagger-ui .request-url {
+    display: none !important;
+}
+
+/* 🔹 Hide "Response headers", "Response description" */
+.swagger-ui .response-col_description,
+.swagger-ui .response-col_links {
+    display: none !important;
+}
+
+/* 🔹 Hide extra response blocks except response body */
+.swagger-ui .opblock-section-header {
+    display: none !important;
+}
