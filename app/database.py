@@ -12,8 +12,6 @@ load_dotenv()
 # Fetch DB URL from .env
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-# If password has special characters, ensure it's URL encoded
-# Example: "Trishadahappiee!23" → "Trishadahappiee%2123"
 if DATABASE_URL:
     DATABASE_URL = DATABASE_URL.replace("!", "%21")
 
